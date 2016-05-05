@@ -2,9 +2,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
-import { cutToEndOfLine } from "./cut-to-end-of-line";
-import { scrollLineToCenter } from "./scroll-line-to-center/index";
-
+import { cutToEndOfLine } from "./cut-to-end-of-line/cut-to-end-of-line";
+import { scrollLineToCenter } from "./scroll-line-to-center/scroll-line-to-center";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -23,7 +22,6 @@ export function activate(context: vscode.ExtensionContext) {
     //     // Display a message box to the user
     //     vscode.window.showInformationMessage('Hello World!');
     // });
-
 
 
     let cutToEndOfLineDisposable = vscode.commands.registerCommand("dd.cutToEndOfLine", cutToEndOfLine);
