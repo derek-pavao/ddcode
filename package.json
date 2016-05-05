@@ -11,7 +11,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:dd.cutToEndOfLine"
+    "onCommand:dd.cutToEndOfLine",
+    "onCommand:dd.scrollLineToCenter"
   ],
   "main": "./out/src/extension",
   "contributes": {
@@ -19,12 +20,21 @@
       {
         "command": "dd.cutToEndOfLine",
         "title": "Cut to end of line"
+      },
+      {
+        "command": "dd.scrollLineToCenter",
+        "title": "Scroll line to center"
       }
     ],
     "keybindings": [
       {
         "key": "ctrl+k",
         "command": "dd.cutToEndOfLine",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "dd.scrollLineToCenter",
         "when": "editorFocus"
       }
     ]

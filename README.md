@@ -9,3 +9,8 @@ wants these features is more than welcome to use it ofcourse.
 This command is will cut the text starting at the character under the cursor
 and ending with the character at the end of the line and place it on your clipboard.
 The provided keyboard shortcut for this is ```ctrl+k```
+
+
+### Scroll line to center
+This command will scroll the current line your cursor is on into the center of the view port.
+The provided keyboard short cut is bound to ```ctrl+l```
